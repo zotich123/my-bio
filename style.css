@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 0;
+    line-height: 1.65;
+}
+
+/* --- Навигация --- */
+nav {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 18px 28px;
+    font-weight: 500;
+    transition: 0.25s;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: #4cc9f0;
+    background-color: #16213e;
+}
+
+nav a.active {
+    color: #4cc9f0;
+    border-bottom: 3px solid #4cc9f0;
+}
+
+/* --- Контейнер --- */
+.container {
+    max-width: 800px;
+    margin: 45px auto;
+    background: #ffffff;
+    padding: 45px 55px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+}
+
+/* --- Заголовки --- */
+h1 {
+    color: #1a1a2e;
+    margin: 0 0 5px 0;
+    font-size: 2em;
+}
+
+.subtitle {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 30px;
+    font-size: 1.05em;
+}
+
+h2 {
+    color: #1a1a2e;
+    margin-top: 35px;
+    border-left: 4px solid #4cc9f0;
+    padding-left: 12px;
+}
+
+/* --- Таблица --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+table td:first-child {
+    font-weight: 600;
+    color: #495057;
+    width: 35%;
+}
+
+/* --- Неупорядоченный список (точки) --- */
+.styled-list {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.styled-list li {
+    background: #f1f3f5;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 3px solid #4cc9f0;
+    transition: 0.2s;
+}
+
+.styled-list li:hover {
+    background: #e7f5ff;
+    transform: translateX(4px);
+}
+
+/* --- Упорядоченный список (цифры) --- */
+.styled-list.numbered {
+    list-style: decimal;
+    padding-left: 30px;
+}
+
+.styled-list.numbered li {
+    background: #f1f3f5;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 3px solid #4cc9f0;
+    transition: 0.2s;
+}
+
+.styled-list.numbered li:hover {
+    background: #e7f5ff;
+    transform: translateX(4px);
+}
+
+/* --- Ссылки внутри списков --- */
+.styled-list a {
+    color: #4361ee;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.styled-list a:hover {
+    color: #4cc9f0;
+    text-decoration: underline;
+}
+
+/* --- Карточки в киберспорте --- */
+.game-card {
+    background: #f1f3f5;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border-left: 4px solid #4cc9f0;
+    margin-bottom: 20px;
+}
+
+.game-card h3 {
+    margin-top: 0;
+    color: #1a1a2e;
+}
+
+/* --- Подвал --- */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #adb5bd;
+    font-size: 0.9em;
+}
